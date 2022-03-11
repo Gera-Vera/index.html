@@ -8,76 +8,6 @@
   
 <style>
   
-* {box-sizing: border-box;}
-body {font-family: "Times New Roman";}
-.mySlides {display: none;}
-img {vertical-align: middle;}
-
-/* Slideshow container */
-.slideshow-container {
-  max-width: 100%;
-  position: relative;
-  margin: auto;
-}
-
-/* Caption text */
-.text {
-  color: black;
-  font-size: 15px;
-  padding: 8px 12px;
-  position: absolute;
-  bottom: 8px;
-  width: 100%;
-  text-align: center;
-}
-
-/* Number text (1/3 etc) */
-.numbertext {
-  color: black;
-  font-size: 12px;
-  padding: 8px 12px;
-  position: absolute;
-  top: 0;
-}
-
-/* The dots/bullets/indicators */
-.dot {
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
-  background-color: black;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
-}
-
-.active {
-  background-color: blue;
-}
-
-/* Fading animation */
-.fade {
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.5s;
-  animation-name: fade;
-  animation-duration: 1.5s;
-}
-
-@-webkit-keyframes fade {
-  from {opacity: .4} 
-  to {opacity: 1}
-}
-
-@keyframes fade {
-  from {opacity: .4} 
-  to {opacity: 1}
-}
-
-/* On smaller screens, decrease text size */
-@media only screen and (max-width: 100%) {
-  .text {font-size: 11px}
-}
-
 div {text-align: center;
   width: 100%;
   height: 100%;
@@ -128,52 +58,6 @@ div {text-align: center;
   
 <body>
 
-<div class="slideshow-container">
-
-<div class="mySlides fade">
-  
-  <div class="numbertext">1 / 3</div>
-  
-  <img src="7.jpg" style="width:25% height:25%">
-  
-  <div class="text">Junior Year Goal Celebration at Alisal High School</div>
-  
-</div>
-
-<div class="mySlides fade">
-  
-  <div class="numbertext">2 / 3</div>
-  
-  <img src="4.jpg" style="width:25% height:25%">
-  
-  <div class="text">Senior Year at Alisal High School</div>
-  
-</div>
-
-<div class="mySlides fade">
-  
-  <div class="numbertext">3 / 3</div>
-  
-  <img src="8.jpg" style="width:25% height:25%">
-  
-  <div class="text">Freshmen at the University of San Francisco</div>
-  
-</div>
-
-</div>
-  
-<br>
-
-<div style="text-align:center">
-  
-  <span class="dot"></span> 
-  
-  <span class="dot"></span> 
-  
-  <span class="dot"></span>
-  
-</div>
-
 <div id="hone"><h1>Can We Meet For Some Coffee?</h1></div>
 
 <div>
@@ -193,29 +77,6 @@ div {text-align: center;
     who are athletes and those who are in the military. Thanks for reading this far, I hope I intrigued you enough to contact me in order for us to meet in person.</p></div>
   
   <div id="foot"><footer> <small>&copy; Copyright 2022, WBAMN</small> </footer></div>
-
-
-<script>
-var slideIndex = 0;
-showSlides();
-
-function showSlides() {
-  var i;
-  var slides = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("dot");
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";  
-  }
-  slideIndex++;
-  if (slideIndex > slides.length) {slideIndex = 1}    
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block";  
-  dots[slideIndex-1].className += " active";
-  setTimeout(showSlides, 2000); // Change image every 2 seconds
-}
-</script>
 
 </body>
   
