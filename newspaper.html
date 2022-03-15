@@ -8,8 +8,34 @@
 .newspaper {
   column-count: 3;
 }
+  
+.pagination {
+  display: inline-block;
+}
+
+.pagination a {
+  color: black;
+  float: left;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+
+.pagination a.active {
+  background-color: red;
+  color: blue;
+  border-radius: 5px;
+}
+
+.pagination a:hover:not(.active) {
+  background-color: blue;
+  color:red;
+  border-radius: 5px;
+}
+  
 </style>
+  
 </head>
+  
 <body>
 
 <h1>Create Multiple Columns</h1>
@@ -40,6 +66,18 @@ I'm Gerardo Tapia Vera, and I'm born and raised on the soccer fields of Salinas,
   are very important responsibilities in life that lead to the wellbeing and success of any individual. Please feel free to contact me at my cellphone number +18313561442 or my 
   email gerardov66@gmail.com, thank you.
 </div>
+  
+  <div class="pagination">
+  <a href="#">&laquo;</a>
+  <a href="https://gera-vera.github.io/index.html/">1</a>
+  <a href="https://gera-vera.github.io/newspaper.html/" class="active">2</a>
+  <a href="#">3</a>
+  <a href="#">4</a>
+  <a href="#">5</a>
+  <a href="#">6</a>
+  <a href="#">&raquo;</a>
+</div>
 
 </body>
+  
 </html>
